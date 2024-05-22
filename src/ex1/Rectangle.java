@@ -12,6 +12,13 @@ public class Rectangle {
         this.l2 = l2;
     }
 
+    public static void stampTwoRectangles(Rectangle rectangle1, Rectangle rectangle2) {
+        double sumPerimeter = rectangle1.calculatePerimeter() + rectangle2.calculatePerimeter();
+        double sumArea = rectangle1.calculateArea() + rectangle2.calculateArea();
+        System.out.println("The sum of the perimeters is: " + sumPerimeter);
+        System.out.println("the sum of the areas is: " + sumArea);
+    }
+
     //methods
     public double calculatePerimeter() {
         return (l1 + l2) * 2;
@@ -19,6 +26,10 @@ public class Rectangle {
 
     public double calculateArea() {
         return l1 * l2;
+    }
+
+    public void stampRectangle() {
+        System.out.println("The rectangle perimeter is: " + calculatePerimeter() + ", the area is " + calculateArea());
     }
 
     //encapsulation

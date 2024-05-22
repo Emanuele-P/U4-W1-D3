@@ -11,7 +11,7 @@ public class Main {
         int yourNum = sc.nextInt();
 
         while (Integer.toString(yourNum).length() != 9) {
-            System.out.println("Invalid phone number. Please insert a 9 digit number: ");
+            System.out.println("Invalid phone number. Please insert a 9 digits number: ");
             yourNum = sc.nextInt();
         }
 
